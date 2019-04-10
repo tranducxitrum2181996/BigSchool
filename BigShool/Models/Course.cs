@@ -19,5 +19,5 @@ namespace BigShool.Models
         public byte CategoryId { get; set; }
 
     }
-   
+
 }
