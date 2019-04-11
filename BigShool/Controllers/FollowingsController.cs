@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Web.Http;
+using System.Web.Mvc;
 
 namespace BigSchool.Controllers
 {
@@ -35,6 +35,16 @@ namespace BigSchool.Controllers
             _dbContext.SaveChanges();
 
             return Ok();
+        }
+
+        private IHttpActionResult Ok()
+        {
+            throw new NotImplementedException();
+        }
+
+        private IHttpActionResult BadRequest(string v)
+        {
+            throw new NotImplementedException();
         }
     }
 }

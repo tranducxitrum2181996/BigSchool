@@ -18,7 +18,13 @@ namespace BigShool.Models
         public Category Category { get; set; }
         [Required]
         public byte CategoryId { get; set; }
+        public bool IsCanceled { get; internal set; }
+        public object Lecturer { get; internal set; }
 
+        public static implicit operator Course(Course v)
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }
